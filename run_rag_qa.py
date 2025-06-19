@@ -8,8 +8,6 @@ from langchain.prompts import PromptTemplate
 from langchain.document_loaders import TextLoader
 
 # --- Config ---
-# You need a Hugging Face API token. Best to set this as an environment variable.
-# Get one here: https://huggingface.co/settings/tokens
 HUGGINGFACEHUB_API_TOKEN = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
 if not HUGGINGFACEHUB_API_TOKEN:
     print("Warning: Hugging Face API token not found. Set the HUGGINGFACEHUB_API_TOKEN environment variable.")
